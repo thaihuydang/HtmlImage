@@ -29,7 +29,6 @@ namespace HtmlImage.Droid
                 bitMapOption.InPreferredConfig = Bitmap.Config.Argb4444;
                 bitMapOption.InPurgeable = true;
                 bitMapOption.InInputShareable = true;
-                source = "https://cdn.vox-cdn.com/thumbor/Yy4jX6Xc7l53PnJynUc2I2oTmiM=/0x0:2040x1360/320x0/filters:focal(0x0:2040x1360):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/16257174/vpavic_190510_3415_0187.jpg";
                 var url = new Java.Net.URL(source);
 
                 bitMap = BitmapFactory.DecodeStream(url.OpenStream(), null, bitMapOption);
